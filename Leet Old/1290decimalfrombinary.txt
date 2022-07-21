@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int getDecimalValue(ListNode* head) {
+        int n=0,i=0,d=0;
+        ListNode* c=head;
+        while(c!=NULL)
+        {
+        n++;
+        c=c->next;
+        }
+        c=head;
+        for(i=n-1;i>=0;i--)
+        {
+        d=d+(c->val)*pow(2,i);
+        c=c->next;
+        }
+        return(d);
+    }
+};
