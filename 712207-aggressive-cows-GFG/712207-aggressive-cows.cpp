@@ -15,9 +15,8 @@ public:
                  count++;
                  lastpositionofcow=nums[i];
               }
-              if(count==k) break;
             }
-            if(count==k){
+            if(count>=k){
                 ans=mid;
                 start=mid+1;
             }
